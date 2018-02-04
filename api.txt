@@ -1,0 +1,15 @@
+import bitcoind
+
+API_KEY='M.jsdbfjhsbdjfsdfsdfhbsfhjshf43589347534785'
+API_SECRET='M.dshfsfhsdfhs7834y578345734653478534584'
+
+GOOGLE_API_KEY='lolxd'
+
+
+
+
+192.12.18.1
+
+password='mypass'
+
+L5KqCP9A5NeTSL7Rv26FNynsuM9D7GQcP5DTv6uE8Pc1pGAAXBRi
