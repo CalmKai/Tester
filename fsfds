@@ -1,0 +1,36 @@
+#Firebase Module for YAHWEH - TO
+
+import re
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+def parse(txt, wholeText):
+    if 'apiKey:' in txt:
+        if 'apiKey:' in txt:
+            if 'xxx' not in txt:
+                print bcolors.OKBLUE + "[*] Firebase Module: Found Creds" + bcolors.ENDC
+                title = txt.split('#!!T!!#')[1].replace("\n", "")
+                ak = txt.split("apiKey:")[1]
+                ak = ak.replace(" ", "")
+                vl = re.findall('"([^"]*)"', ak)[0]
+                for line in wholeText:
+                    ln = txt.split('#!!T!!#')[1].replace("\n", "")
+                    finishedArray = []
+                    finishedArray.append(ln)
+
+                print wholeText
+                return[vl, title]
+            else:
+                return False
+        else:
+            return False
+    else:
+        return False
